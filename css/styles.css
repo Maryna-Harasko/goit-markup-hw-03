@@ -1,0 +1,325 @@
+:root {
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --adress-text-color: rgba(255, 255, 255, 0.6);
+    --accent-color: #2196F3;
+    --white-color: #FFFFFF;
+    --primary-bgr-color: #F5F5F5;
+    --dark-bgr-color: #2F303A;
+    --ligth-brg-color: #F5F4FA;
+    --logo-text: #000000;
+}
+
+body{
+    color: var(--primary-text-color);
+
+    background-color: var(--primary-bgr-color);
+    
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+.container{
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: auto;
+   }
+
+h1, h2, h3{
+    color: var(--title-text-color);
+    }
+
+.img{
+    display: block;
+}
+
+/*Header*/
+
+.header-page {    
+    background-color: var(--white-color);    
+   }
+
+.logo{
+    color: var(--logo-text);
+    
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    text-decoration: none;
+
+}
+
+.logo .accent {
+    color: var(--accent-color);
+}
+
+.list{
+    list-style-type: none;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.advanteg-list, .portfolio-list, .portfolio-button-list {
+    list-style-type: none;
+}
+
+.site-nav .link, .contact .link{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.33;
+    letter-spacing: 0.02em;
+}
+
+.site-nav .link, .portfolio-link {
+    text-decoration: none;
+    color: var(--title-text-color);
+}
+
+
+.contact .link{
+    text-decoration: none;
+    color: var(--primary-text-color);
+}
+
+ .site-nav .current {
+    color: var(--accent-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus,
+.contact .link:hover,
+.contact .link:focus {
+    color: var(--accent-color);
+}
+
+
+/*section Hero*/
+
+.hero-section{
+   
+    padding-top: 200px;
+    background-color: var(--dark-bgr-color);
+    text-align: center;
+      
+}
+
+.hero-title{
+    margin-top: 0;
+    margin-bottom: 30px;
+
+    color: var(--white-color);
+
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+}
+
+.hero-button{
+    margin-bottom: 200px;
+
+    background: var(--accent-color);
+    color: var(--white-color);
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.hero-button:hover, .hero-button:focus{
+    background-color: #188CE8;
+}
+
+/*Section Наші переваги*/
+
+.advanteg-section{
+
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.advanteg-title{
+    margin-top: 0;
+    margin-bottom: 10px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.4;
+    text-transform: uppercase;
+}
+
+.advanteg-text{
+    margin-top: 0;
+    margin-bottom: 0;
+
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+/*Section Чим ми займаємося*/
+
+.project-title, .team-title{
+
+    margin-top: 0;
+    margin-bottom: 50px;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+}
+
+.project-list{
+
+}
+/*Section Наша команда*/
+
+.team-section{
+    background-color: var(--ligth-brg-color);
+    text-align: center;
+    line-height: 1.19;
+}
+
+.team-list{
+    margin-top: 0;
+    margin-bottom: 0;
+
+    background-color: var(--white-color);
+}
+
+.team-list .img{
+    margin-bottom: 30px;
+}
+
+.team-list .subtitle{
+    margin-top: 0;
+    margin-bottom: 10px;
+
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.team-list .text{
+    margin-top: 0;
+    margin-bottom: 0;
+
+    font-size: 16px;    
+}
+
+/*Страница портфоліо*/
+
+.portfolio-button{
+    background: var(--ligth-brg-color);
+    color: var(--title-text-color);
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.portfolio-button:hover, .portfolio-button:focus{
+    background-color: var(--accent-color);
+    color: var(--white-color);
+}
+
+.portfolio-list{
+    background-color: var(--white-color);
+}
+
+.portfolio-link{
+    color: var(--primary-text-color);
+}
+
+.portfolio-title{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.portfolio-text {
+    font-size: 16px;
+    line-height: 1.89;
+}
+
+/*footer*/
+
+.footer-page{
+    background-color: var(--dark-bgr-color);
+}
+
+
+.footer-page .logo{
+    margin-bottom: 20px;
+
+    color: var(--white-color); 
+}
+
+.adress-list{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.link-adress>.link{
+    margin-bottom: 9px;
+
+    color: var(--white-color);
+}
+
+.link-contact>.link{
+    margin-bottom: 9px;
+    color: var(--adress-text-color);
+}
+
+
+.link-adress , .link-contact {
+    list-style-type: none;
+}
+
+.link-adress>.link,
+.link-contact>.link {
+    text-decoration: none;
+}
+
+.footer-page,
+.link-adress,
+.link-contact {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+.link-adress>.link:hover, .link-adress>.link:focus,
+.link-contact>.link:hover,
+.link-contact>.link:focus {
+    color: var(--accent-color);
+}
+
+
+
