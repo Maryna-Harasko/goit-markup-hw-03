@@ -37,7 +37,8 @@ body{
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
    }
 
 h1, h2, h3{
@@ -54,7 +55,19 @@ h1, h2, h3{
     background-color: var(--white-color);    
    }
 
-.logo{
+   .flex-header{
+    display: flex;
+    align-items: center;
+   }
+
+   .site-nav {
+       display: flex;
+       align-items: center;
+       flex-grow: 1;
+   }
+
+   .logo{
+    margin-right: 93px;
     color: var(--logo-text);
     
     font-family: 'Raleway', sans-serif;
@@ -69,13 +82,29 @@ h1, h2, h3{
     color: var(--accent-color);
 }
 
+.nav-list{
+    display: flex;
+    align-items: center;
+}
+
+.nav-list .item:not(:last-child){
+    margin-right: 50px;
+}
+
 .list{
     list-style-type: none;
     margin-top: 0;
     margin-bottom: 0;
 }
 
+
+
 .site-nav .link, .contact .link{
+
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    
     font-weight: 500;
     font-size: 14px;
     line-height: 1.33;
@@ -87,6 +116,13 @@ h1, h2, h3{
     color: var(--title-text-color);
 }
 
+.contact{
+    display: flex;
+}
+
+.contact .item:not(:last-child){
+    margin-right: 50px;
+}
 
 .contact .link{
     text-decoration: none;
@@ -118,6 +154,9 @@ h1, h2, h3{
 .hero-title{
     margin-top: 0;
     margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 696px;
 
     color: var(--white-color);
 
@@ -126,11 +165,12 @@ h1, h2, h3{
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-
+    
 }
 
 .hero-button{
     margin-bottom: 200px;
+    padding: 10px 32px;
 
     background: var(--accent-color);
     color: var(--white-color);
@@ -154,8 +194,20 @@ h1, h2, h3{
 
     margin-top: 0;
     margin-bottom: 0;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
+.advanteg-list{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.advanteg-list .item:not(:last-child){
+    max-width: calc((100%-90px)/4);
+    margin-right: 30px;
+}
 .advanteg-title{
     margin-top: 0;
     margin-bottom: 10px;
@@ -176,6 +228,12 @@ h1, h2, h3{
 
 /*Section Чим ми займаємося*/
 
+.project-section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+
 .project-title, .team-title{
 
     margin-top: 0;
@@ -187,19 +245,40 @@ h1, h2, h3{
     text-align: center;
 }
 
+.project-list{
+    display: flex;
+    justify-content: center;
+}
+
+.project-list .item:not(:last-child){
+    width: calc((100%-60px)/3);
+    margin-right: 30px;
+}
 /*Section Наша команда*/
 
 .team-section{
     background-color: var(--ligth-brg-color);
     text-align: center;
     line-height: 1.19;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .team-list{
+    display: flex;
+    justify-content: center;
+
     margin-top: 0;
     margin-bottom: 0;
+}
 
+.team-list .list{
     background-color: var(--white-color);
+}
+
+.team-list .list:not(:last-child){
+    width: calc((100%-90px)/4);
+    margin-right: 30px;
 }
 
 .team-list .img{
@@ -216,7 +295,7 @@ h1, h2, h3{
 
 .team-list .text{
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 30px;
 
     font-size: 16px;    
 }
@@ -224,7 +303,7 @@ h1, h2, h3{
 /*Страница портфоліо*/
 
 .portfolio-button{
-    
+               
     background: var(--ligth-brg-color);
     color: var(--title-text-color);
     font-family: inherit;
@@ -276,10 +355,13 @@ h1, h2, h3{
 
 .footer-page{
     background-color: var(--dark-bgr-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 
 .footer-page .logo{
+    display: block;
     margin-bottom: 20px;
 
     color: var(--white-color); 
@@ -288,6 +370,7 @@ h1, h2, h3{
 .adress-list{
     margin-top: 0;
     margin-bottom: 0;
+    padding-left: 0;
 }
 
 .link-adress>.link{

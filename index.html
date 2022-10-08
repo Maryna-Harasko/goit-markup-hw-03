@@ -20,18 +20,22 @@
   <body>
     <header class="header-page">
       <div class="container">
-        <nav>
-          <a class="logo" href="./index.html"><span class="accent" lang="en">Web</span>Studio</a>
-          <ul class="site-nav list">
-            <li><a class="link current" href="#">Студія</a></li>
-            <li><a class="link" href="./portfolio.html">Портфоліо</a></li>
-            <li><a class="link" href="#">Контакти</a></li>
+        <div class="flex-header">
+          <nav class="site-nav">
+            <a class="logo" href="./index.html"><span class="accent" lang="en">Web</span>Studio</a>
+            <ul class="nav-list list">
+              <li class="item"><a class="link current" href="#">Студія</a></li>
+              <li class="item"><a class="link" href="./portfolio.html">Портфоліо</a></li>
+              <li class="item"><a class="link" href="#">Контакти</a></li>
+            </ul>
+          </nav>
+          <ul class="contact list">
+            <li class="item">
+              <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+            <li class="item"><a class="link" href="tel:+380961111111">+38 096 111 11 11</a></li>
           </ul>
-        </nav>
-        <ul class="contact list">
-          <li><a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-          <li><a class="link" href="tel:+380961111111">+38 096 111 11 11</a></li>
-        </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -43,25 +47,25 @@
         <div class="container">
           <h2 class="visually-hidden">Наші переваги</h2>
           <ul class="advanteg-list list">
-            <li>
+            <li class="item">
               <h3 class="advanteg-title">Увага до деталей</h3>
               <p class="advanteg-text">
                 Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
               </p>
             </li>
-            <li>
+            <li class="item">
               <h3 class="advanteg-title">Пунктуальність</h3>
               <p class="advanteg-text">
                 Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
               </p>
             </li>
-            <li>
+            <li class="item">
               <h3 class="advanteg-title">Планування</h3>
               <p class="advanteg-text">
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
-            <li>
+            <li class="item">
               <h3 class="advanteg-title">Сучасні технології</h3>
               <p class="advanteg-text">
                 Значимість цих проблем настільки очевидна, що реалізація планових завдань.
@@ -74,7 +78,7 @@
         <div class="container">
           <h2 class="project-title">Чим ми займаємося</h2>
           <ul class="project-list list">
-            <li>
+            <li class="item">
               <img
                 class="img"
                 src="./images/frontend.jpg"
@@ -83,7 +87,7 @@
                 height="294"
               />
             </li>
-            <li>
+            <li class="item">
               <img
                 class="img"
                 src="./images/adaptabil.jpg"
@@ -92,7 +96,7 @@
                 height="294"
               />
             </li>
-            <li>
+            <li class="item">
               <img
                 class="img"
                 src="./images/design.jpg"
